@@ -1,6 +1,6 @@
 version: '3'
 services:
-  onlineFoodProject:
+  foodorderingsystem:
     build:
       context: .
       dockerfile: Dockerfile
