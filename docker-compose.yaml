@@ -6,10 +6,16 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
+    links:
+      - mongodb
     depends_on:
       - mongodb
+    container_name: foodorderingsystem
 
   mongodb:
     image: mongo
     ports:
       - 27017:27017
+    container_name: mongodb
+    volumes:
+    - /Users/shubham/Desktop/data/db:/data/db
