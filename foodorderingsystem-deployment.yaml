@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foodorderingsystem
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: foodorderingsystem
+  template:
+    metadata:
+      labels:
+        app: foodorderingsystem
+    spec:
+      containers:
+        - image: foodorderingsystem
+          name: foodorderingsystem
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+      restartPolicy: Always
