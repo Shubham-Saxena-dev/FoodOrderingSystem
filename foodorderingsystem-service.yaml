@@ -7,7 +7,7 @@ spec:
   ports:
     - name: foodorderingsystem
       port: 8080
-      targetPort: 80808080
+      targetPort: 8080
       protocol: TCP
   selector:
     app: foodorderingsystem
