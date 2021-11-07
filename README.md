@@ -47,7 +47,7 @@ To compose:
 
 ```
 1) minikube start
-2) kubectl apply -f foodorderingsystem-deployment.yaml,foodorderingsystem-service.yaml, mongodb-deployment.yaml, mongodb-persistentvolumeclaim.yaml, mongodb-service.yaml
+2) kubectl apply -f foodorderingsystem-deployment.yaml,foodorderingsystem-service.yaml,mongodb-deployment.yaml,mongodb-persistentvolumeclaim.yaml,mongodb-service.yaml
 3) kubectl get pods/service/nodes/deployments/all
 4) minikube service foodorderingsystem --url
 
